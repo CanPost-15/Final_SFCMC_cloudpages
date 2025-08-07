@@ -1,0 +1,24 @@
+%%[set @IV='a67ad7b18ba5488f'
+Set @salt ='DEV_SALT_KEY'
+set @skey='00eaf566c2c324bfedb6dcdd9f40226a'
+set @par='00353000001YHS5AAO'
+
+
+
+
+SET @encData=EncryptSymmetric(@par, 'AES', @null, 'efb01adc193856a6efb01adc193856a6', @null, @null , @null, '0000000000000000a67ad7b18ba5488f')
+
+
+
+
+
+
+
+
+
+]%%
+
+
+
+
+Encrypted ID : %%=v(@encData)=%%
